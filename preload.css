@@ -1,0 +1,121 @@
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+}
+
+
+.animated-text{
+    width:280px;
+}
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+    animation: slide-out-container 3s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+
+path{
+    stroke: #ffffff;
+    fill:#ffffff;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1), blink 1s linear 3.2s ;
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill:none;
+        stroke-dashoffset: 1800;
+    }
+
+    30% {
+        opacity:10;
+        fill:none;
+        stroke-dashoffset: 1800;
+        
+    }
+
+    70%{
+        fill:rgba(255,255,255,0);
+    }
+
+    80% {
+         fill:rgba(255,255,255,1);
+    }
+
+
+}
+
+@keyframes blink {
+
+    19% {
+        fill:#ffffff;
+        stroke: #ffffff;
+    }
+    20% {
+        fill:none;
+        stroke: #ffffff;
+    }
+
+    39% {
+        fill:none;
+        stroke: #fff;
+    }
+    40% {
+        fill:#ffffff;
+        stroke: #ffffff;
+    }
+
+    59% {
+        fill:#ffffff;
+        stroke: #ffffff;
+    }
+
+    60% {
+        fill:none;
+        stroke:#ffffff;
+    }
+
+    79% {
+        fill:none;
+        stroke: #ffffff;
+    }
+
+    80% {
+        fill:#ffffff;
+        stroke: #ffffff;
+    }
+
+    100% {
+        fill:#ffffff;
+        stroke:#ffffff;
+    }
+}
+
+@keyframes slide-out-container {
+    0% {
+        height: 100vh;
+    }
+
+    40% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
