@@ -19,6 +19,13 @@ body{
     display: none;
 }
 
+h1 span{
+    display:inline-block;
+    border-bottom:3px solid black;
+    padding-bottom:20px;
+   
+}
+
 header{
     height:30px;
     background-color: transparent;
@@ -49,15 +56,11 @@ main{
 }
 
 #about{
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-    text-align: center;
-    display: inline-block;
     margin:50px;
-    margin-left:50%;
     padding-bottom: 30px;
-    border-bottom: 4px solid black;
-    transform: translate(-50%,0);
     font-weight: 300;
 }
 
@@ -107,17 +110,13 @@ p{
 
 .my-work{
     background-color: #f3f3f3;
-    padding-bottom: 50px;
+    padding:40px 0;
+    margin-bottom: 30px;
 }
 
 #work{
-    display: inline-block;
-    margin:50px;
-    margin-top:50px;
-    margin-left:50%;
-    transform: translate(-50%,0);
-    padding-bottom: 30px;
-    border-bottom: 4px solid black;
+    text-align: center;
+    padding-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 300;
@@ -200,12 +199,8 @@ p{
 
 
 #contact{
-    display: inline-block;
-    margin:50px;
-    margin-left:50%;
-    transform: translate(-50%,0);
+    text-align: center;
     padding-bottom: 30px;
-    border-bottom: 4px solid black;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 300;
@@ -293,7 +288,7 @@ h6{
 }
 
 
-@media(max-width: 995px){
+@media only screen and (max-width: 995px){
 
     #about-introduction-text{
         text-align: start;
@@ -302,9 +297,9 @@ h6{
 }
 
 
-@media(max-width: 677px){
-    .about-me{
-        background-color: #fff;
+@media only screen and  (max-width: 677px){
+    h1{
+        font-size: 32px;
     }
 
     #about-introduction-text{
@@ -312,11 +307,11 @@ h6{
         width:310px;
     }
     .work-content{
-        width: 310px;
+        width: 280px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows:300px 300px 300px 300px 300px;
+        grid-template-columns: 280px;
+        grid-template-rows:280px 280px 280px 280px 280px;
         grid-template-areas:
         "rps"
         "mp"
@@ -324,5 +319,17 @@ h6{
         "gtc"
         "pc"
         ;
+    }
+}
+
+
+@media only screen and (max-width: 370px){
+    p,#about-introduction-text{
+        margin:10px;
+        width: 280px;
+    }
+    .social-media a i {
+        padding:10px;
+        margin:10px;
     }
 }
