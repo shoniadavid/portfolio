@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/monument-extended');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
 
@@ -13,7 +13,7 @@ body{
     -moz-user-select: none;
     -o-user-select: none;
     -ms-user-select: none;
-    font-family: "Monument Extended", sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 ::-webkit-scrollbar{
     display: none;
